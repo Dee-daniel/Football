@@ -11,6 +11,7 @@ const teamRouter = require('./routes/teamRouter')
 
 //middleware
 app.use(teamRouter);
+app.use(cors());
 app.use(express.json());
 
 //error route
