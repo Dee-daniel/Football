@@ -16,7 +16,7 @@ app.use(express.json());
 
 //error route
 app.use((req,res) => {
-    res.status(404).send('ROUTE DOES NOT EXIST')
+    res.status(404).send(`route not found try <a href="http://api/v1/teams">FOOTBALL API</a>`);
 });
 
 
